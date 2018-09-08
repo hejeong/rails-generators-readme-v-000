@@ -1,4 +1,6 @@
 class ReleaseYearValidator < ActiveModel::EachValidator
+
+end
 class Song < ActiveRecord::Base
   validates :title, presence: true
   validates :released, inclusion: {%w(true false)}
